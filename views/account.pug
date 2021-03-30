@@ -5,10 +5,8 @@ block content
   div(class="container-fluid", id="main")
       div(class="row", id="r")
 
--
-  var list = ["Uno", "Dos", "Tres",
+        -
+          var list = ["Uno", "Dos", "Tres",
           "Cuatro", "Cinco", "Seis"]
-each item in list
-  var parElement = document.getElementById("r");
-  var textToAdd = document.createTextNode(item);
-  parElement.appendChild(textToAdd);
+        each item in list
+            div(class="col-sm-2")item
