@@ -6,9 +6,9 @@ block content
       div(class="row", id="r")
         -
           var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"];
-        for(i=0;i<list.length;i++){
-              div(class="col-sm-2") list[i]
-        }
+        each item in list
+              li= item
+              
           
 
 
