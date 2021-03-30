@@ -5,9 +5,10 @@ block content
   div(class="container-fluid", id="main")
       div(class="row", id="r")
         -
-        var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"];
-        each item in list
-            iv(class="col-sm-2") item
+          var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"];
+        for(i=0;i<list.length;i++){
+              div(class="col-sm-2") list[i]
+        }
           
 
 
