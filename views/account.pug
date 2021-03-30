@@ -5,9 +5,11 @@ block content
   div(class="container-fluid", id="main")
       div(class="row", id="r")
         -
-          var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"];
-          each item in list
-            div(class="col-sm-2") item;
+          function f(){
+            var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"];
+            each item in list
+              div(class="col-sm-2") item;
+          }
 
 
             
