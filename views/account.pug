@@ -1,5 +1,16 @@
 extends layout
 
 block content
-  h1 Search Result in account
+  h1 Search Results in account
+  div(class="container-fluid", id="main")
+      div(class="row", id="r")
+
+
+- var results = ["account 1","account 2","account 3"];
+- results.foreach(myFunction);
+- function myFunction(item, index, arr) {
   
+  var parElement = document.getElementById("r");
+  var textToAdd = document.createTextNode(item);
+  parElement.appendChild(textToAdd);
+  }
