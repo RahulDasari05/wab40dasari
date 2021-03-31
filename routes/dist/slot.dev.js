@@ -7,7 +7,7 @@ var router = express.Router();
 
 router.get('/', function (req, res, next) {
   res.render('slot', {
-    title: 'Express'
+    title: 'Slot'
   });
 });
 module.exports = router;
